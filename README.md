@@ -1,6 +1,7 @@
 UnityでLINE botのメッセージを送受信できるソースコード。  
 データベースはGoogleスプレッドシートを使用。  
-Source code to send and receive LINE bot messages in Unity. The database uses Google Spreadsheets.
+Source code to send and receive LINE bot messages in Unity. The database uses Google Spreadsheets.  
+<img src="https://user-images.githubusercontent.com/82018274/211155197-2923b39b-68f9-454e-8f2b-932ced31b083.png" width="400px">
 
 # 仕様
 実行環境: Unity 2021.3.16f1
@@ -20,6 +21,7 @@ UnityWebRequest www = UnityWebRequest.Get("https://script.google.com/macros/s/XX
 ## Linebot
 [LINE Developer](https://developers.line.biz/ja/)からアカウントを作成し、チャネルアクセストークンを発行する。  
 webhookを先ほどデプロイで発行したURLにする。  
+チャネルアクセストークンを発行し、Google Apps Scrpitの`CHANNEL_ACCESS_TOKEN`を書き替える。
 
 ## Unity
 `Asset` を 所定の位置に配置。
